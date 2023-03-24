@@ -8,6 +8,7 @@ on:
 jobs:
   removeOldArtifacts:
     runs-on: ubuntu-latest
+    permissions: write-all
     name: Remove artifacts
     # You may pin to the exact commit or the version.
     # uses: c-hive/gha-remove-artifacts@24dc23384a1fa6a058b79c73727ae0cb2200ca4c
