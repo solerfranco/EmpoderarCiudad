@@ -13,25 +13,24 @@ public class GameController : MonoBehaviour
     public GameObject currentNode;
     public float speed;
     private bool move;
-    public Slider energySlider;
+    public Image energySlider;
+    public float maxEnergy;
     
     void Update()
     {
         if (Input.GetMouseButton(0))
         {
-         
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Vector2 rayOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 rayDirection = Vector2.zero; // set this to the direction you want the ray to be cast in
 
-            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, pathNode))
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, rayDirection, Mathf.Infinity, pathNode);
+            if (hit.collider != null && !selectedObjects.Contains(hit.collider.gameObject) && (lineIndex > 0 ? Vector2.Distance(selectedObjects[lineIndex - 1].transform.position, hit.transform.position) <= 1.5f : true) && (selectedObjects.Count <= 0 ? Vector2.Distance(hit.collider.transform.position, player.transform.position) <= 1 : true))
             {
-                if (hit.collider != null && !selectedObjects.Contains(hit.collider.gameObject) && (lineIndex > 0 ? Vector3.Distance(selectedObjects[lineIndex - 1].transform.position, hit.transform.position) <= 15 : true) && (selectedObjects.Count <= 0 ? Vector3.Distance(hit.collider.transform.position, player.transform.position) < 5 : true))
-                {
-                    selectedObjects.Add(hit.collider.gameObject);
-                    line.SetPosition(lineIndex, hit.collider.transform.position);
-                    line.positionCount++;
-                    lineIndex++;
-                    line.SetPosition(lineIndex, hit.collider.transform.position);
-                }
+                selectedObjects.Add(hit.collider.gameObject);
+                line.SetPosition(lineIndex, hit.collider.transform.position);
+                line.positionCount++;
+                lineIndex++;
+                line.SetPosition(lineIndex, hit.collider.transform.position);
             }
         }
 
@@ -46,12 +45,12 @@ public class GameController : MonoBehaviour
             lineIndex = 0;
             selectedObjects.RemoveAt(0);
             line.positionCount = 1;
-            line.SetPosition(0, Vector3.zero);
+            line.SetPosition(0, Vector2.zero);
         }
 
         if (selectedObjects.Count > 0 && move == true)
         {
-            if(energySlider.value == 0)
+            if(energySlider.fillAmount == 0)
             {
                 currentNode = null;
                 selectedObjects.RemoveRange(0, selectedObjects.Count);
@@ -61,11 +60,11 @@ public class GameController : MonoBehaviour
             {
                 if(Vector3.Distance(currentNode.transform.position, player.transform.position) > 0f)
                 {
-                    player.transform.position = Vector3.MoveTowards(player.transform.position, currentNode.transform.position, speed * Time.deltaTime);
+                    player.transform.position = Vector2.MoveTowards(player.transform.position, currentNode.transform.position, speed * Time.deltaTime);
                 }
                 else
                 {
-                    energySlider.value -= 1;
+                    energySlider.fillAmount -= 1 / maxEnergy;
                     selectedObjects.RemoveAt(0);
                     if(selectedObjects.Count > 0)
                     {
@@ -83,7 +82,7 @@ public class GameController : MonoBehaviour
             currentNode = null;
         }
 
-        if (Input.GetKeyDown(KeyCode.R)) energySlider.value = energySlider.maxValue;
+        if (Input.GetKeyDown(KeyCode.R)) energySlider.fillAmount = 1;
 
     }
 }

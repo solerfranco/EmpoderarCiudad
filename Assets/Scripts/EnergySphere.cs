@@ -5,23 +5,23 @@ using UnityEngine.UI;
 
 public class EnergySphere : MonoBehaviour
 {
-    public Slider energySlider;
+    public Image energySlider;
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.CompareTag("Player"))
         {
-            energySlider.value += 10;
+            energySlider.fillAmount = 1;
             StartCoroutine(Respawn());
         }
     }
 
     private IEnumerator Respawn()
     {
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
-        gameObject.GetComponent<Collider>().enabled = false;
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<CircleCollider2D>().enabled = false;
         yield return new WaitForSeconds(10);
-        gameObject.GetComponent<Collider>().enabled = true;
-        gameObject.GetComponent<MeshRenderer>().enabled = true;
+        gameObject.GetComponent<CircleCollider2D>().enabled = true;
+        gameObject.GetComponent<SpriteRenderer>().enabled = true;
     }
 }
