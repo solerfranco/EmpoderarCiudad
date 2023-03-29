@@ -54,10 +54,10 @@ public class GameController : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(0) && selectedObjects.Count > 0)
+        if (Input.GetMouseButtonDown(0) && selectedObjects.Count > 0 && move == true)
         {
-            speed = 100;
-            //move = false;
+            //speed = 20;
+            move = false;
         }
 
         if (Input.GetMouseButtonUp(0) && blocked)
@@ -73,7 +73,6 @@ public class GameController : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && selectedObjects.Count > 0)
         {
-            speed = initialSpeed;
             move = true;
             lineIndex = 0;
             selectedObjects.RemoveAt(0);
@@ -87,6 +86,7 @@ public class GameController : MonoBehaviour
             {
                 currentNode = null;
                 selectedObjects.RemoveRange(0, selectedObjects.Count);
+                speed = initialSpeed;
                 return;
             }
             if (currentNode != null)
@@ -107,11 +107,13 @@ public class GameController : MonoBehaviour
             }
             else
             {
+                speed = initialSpeed;
                 currentNode = selectedObjects[0];
             }
         }
         else
         {
+            speed = initialSpeed;
             currentNode = null;
         }
 
@@ -121,6 +123,7 @@ public class GameController : MonoBehaviour
 
     public void ClearMovement()
     {
+        speed = initialSpeed;
         selectedObjects.Clear();
         currentNode = null;
         move = false;
