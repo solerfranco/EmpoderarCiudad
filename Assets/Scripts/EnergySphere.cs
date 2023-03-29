@@ -5,14 +5,20 @@ using UnityEngine.UI;
 
 public class EnergySphere : MonoBehaviour
 {
-    public Image energySlider;
+    private Image energySlider;
+
+    private void Awake()
+    {
+        energySlider = GameObject.Find("Fill").GetComponent<Image>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.CompareTag("Player"))
         {
             energySlider.fillAmount = 1;
-            StartCoroutine(Respawn());
+            Destroy(gameObject);
+            //StartCoroutine(Respawn());
         }
     }
 

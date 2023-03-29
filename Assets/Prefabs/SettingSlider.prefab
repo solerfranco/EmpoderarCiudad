@@ -523,8 +523,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Vol. Maestro
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4b544e00cc3dd3342b070d6be3a4a810, type: 2}
-  m_sharedMaterial: {fileID: -4296451131832165572, guid: 4b544e00cc3dd3342b070d6be3a4a810, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 03a15ff554ea4aa4c948d58853422e39, type: 2}
+  m_sharedMaterial: {fileID: 8045207667753544457, guid: 03a15ff554ea4aa4c948d58853422e39, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -711,8 +711,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 50%
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4b544e00cc3dd3342b070d6be3a4a810, type: 2}
-  m_sharedMaterial: {fileID: -4296451131832165572, guid: 4b544e00cc3dd3342b070d6be3a4a810, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 03a15ff554ea4aa4c948d58853422e39, type: 2}
+  m_sharedMaterial: {fileID: 8045207667753544457, guid: 03a15ff554ea4aa4c948d58853422e39, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

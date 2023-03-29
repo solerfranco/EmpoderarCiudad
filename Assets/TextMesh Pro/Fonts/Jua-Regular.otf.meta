@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6bea4a90de6e6db4e82f8cb4c047b01f
+guid: df579055fc112b14b910226d3309fcc8
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -10,7 +10,8 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Jua
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6bea4a90de6e6db4e82f8cb4c047b01f, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

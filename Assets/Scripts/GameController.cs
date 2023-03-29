@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public LayerMask pathNode;
+    public LayerMask wallLayer;
     public LineRenderer line;
     public int lineIndex;
     public List<GameObject> selectedObjects;
@@ -15,6 +16,8 @@ public class GameController : MonoBehaviour
     private bool move;
     public Image energySlider;
     public float maxEnergy;
+    private bool blocked;
+    public int cleaners;
     
     void Update()
     {
@@ -26,6 +29,14 @@ public class GameController : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(rayOrigin, rayDirection, Mathf.Infinity, pathNode);
             if (hit.collider != null && !selectedObjects.Contains(hit.collider.gameObject) && (lineIndex > 0 ? Vector2.Distance(selectedObjects[lineIndex - 1].transform.position, hit.transform.position) <= 1.5f : true) && (selectedObjects.Count <= 0 ? Vector2.Distance(hit.collider.transform.position, player.transform.position) <= 1 : true))
             {
+                if (selectedObjects.Count > 0)
+                {
+                    RaycastHit2D checkWall = Physics2D.Raycast(Vector2.Lerp(selectedObjects[selectedObjects.Count-1].transform.position, hit.transform.position, 0.5f), rayDirection, Mathf.Infinity, wallLayer);
+                    if(checkWall.collider != null)
+                    {
+                        return;
+                    }
+                }
                 selectedObjects.Add(hit.collider.gameObject);
                 line.SetPosition(lineIndex, hit.collider.transform.position);
                 line.positionCount++;
@@ -37,6 +48,17 @@ public class GameController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && selectedObjects.Count > 0)
         {
             move = false;
+        }
+
+        if (Input.GetMouseButtonUp(0) && blocked)
+        {
+            line.startColor = Color.green;
+            line.endColor = Color.green;
+            blocked = false;
+            selectedObjects.Clear();
+            lineIndex = 0;
+            currentNode = null;
+            line.positionCount = 1;
         }
 
         if (Input.GetMouseButtonUp(0) && selectedObjects.Count > 0)
@@ -84,5 +106,12 @@ public class GameController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R)) energySlider.fillAmount = 1;
 
+    }
+
+    public void ClearMovement()
+    {
+        selectedObjects.Clear();
+        currentNode = null;
+        move = false;
     }
 }
