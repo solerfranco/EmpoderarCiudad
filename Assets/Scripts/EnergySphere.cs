@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class EnergySphere : MonoBehaviour
 {
     private Image energySlider;
+    public int energy = 8;
 
     private void Awake()
     {
@@ -16,7 +17,7 @@ public class EnergySphere : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            energySlider.fillAmount = 1;
+            energySlider.fillAmount += energy / FindObjectOfType<GameController>().maxEnergy;
             Destroy(gameObject);
             //StartCoroutine(Respawn());
         }

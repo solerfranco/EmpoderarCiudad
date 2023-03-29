@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
@@ -13,14 +14,22 @@ public class GameController : MonoBehaviour
     public GameObject player;
     public GameObject currentNode;
     public float speed;
+    private float initialSpeed;
     private bool move;
     public Image energySlider;
     public float maxEnergy;
+    public TextMeshProUGUI textEnergy;
     private bool blocked;
     public int cleaners;
-    
+
+    private void Awake()
+    {
+        initialSpeed = speed;
+    }
+
     void Update()
     {
+        textEnergy.text = (energySlider.fillAmount * maxEnergy).ToString("F0");
         if (Input.GetMouseButton(0))
         {
             Vector2 rayOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -47,7 +56,8 @@ public class GameController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && selectedObjects.Count > 0)
         {
-            move = false;
+            speed = 100;
+            //move = false;
         }
 
         if (Input.GetMouseButtonUp(0) && blocked)
@@ -63,6 +73,7 @@ public class GameController : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && selectedObjects.Count > 0)
         {
+            speed = initialSpeed;
             move = true;
             lineIndex = 0;
             selectedObjects.RemoveAt(0);
