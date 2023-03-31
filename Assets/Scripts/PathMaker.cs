@@ -26,7 +26,7 @@ public class PathMaker : MonoBehaviour
 
     private void Update()
     {
-        if (GameController.Instance.player.moving) return;
+        if (GameController.Instance.player.moving || GameController.Instance.pause) return;
         if (Input.GetMouseButton(0))
         {
             Vector2 rayOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -35,7 +35,7 @@ public class PathMaker : MonoBehaviour
 
             if(hit.collider != null)
             {
-                Cursor.SetCursor(GameController.Instance.grabCursor, Vector2.one * 0.5f, CursorMode.Auto);
+                //Cursor.SetCursor(GameController.Instance.grabCursor, Vector2.one * 0.5f, CursorMode.Auto);
                 if (nodes.Count == 0)
                 {
                     if(currentNode == hit.transform.gameObject)
@@ -46,7 +46,7 @@ public class PathMaker : MonoBehaviour
                     }
                     return;
                 }
-                if (!HasObstacle(hit) && !nodes.Contains(hit.transform.gameObject))
+                if (!HasObstacle(hit) && !nodes[nodes.Count-1].CompareTag("Meta") && !nodes.Contains(hit.transform.gameObject))
                 {
                     if (Distance(nodes[nodes.Count - 1], hit) < 2f){
                         nodes.Add(hit.collider.gameObject);
@@ -70,7 +70,7 @@ public class PathMaker : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && nodes.Count > 0)
         {
-            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+            //Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
             if (energyManager.Energy >= 0)
             {
                 currentNode = nodes[nodes.Count - 1];
