@@ -14,6 +14,9 @@ public class GameController : MonoBehaviour
     public PathMaker pathMaker;
     [HideInInspector]
     public int cleaners;
+    
+    public Texture2D handCursor;
+    public Texture2D grabCursor;
 
     private void Awake()
     {

@@ -35,6 +35,7 @@ public class PathMaker : MonoBehaviour
 
             if(hit.collider != null)
             {
+                Cursor.SetCursor(GameController.Instance.grabCursor, Vector2.one * 0.5f, CursorMode.Auto);
                 if (nodes.Count == 0)
                 {
                     if(currentNode == hit.transform.gameObject)
@@ -69,7 +70,8 @@ public class PathMaker : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && nodes.Count > 0)
         {
-            if(energyManager.Energy >= 0)
+            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+            if (energyManager.Energy >= 0)
             {
                 currentNode = nodes[nodes.Count - 1];
                 GameController.Instance.player.Walk(new List<GameObject>(nodes));
