@@ -1,0 +1,541 @@
+fileFormatVersion: 2
+guid: 06a21cd546752764d93541cc44218102
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_0
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 2166
+        width: 169
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8027119c2b060f49948607295db12a8
+      internalID: 1520117850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_4
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 2053
+        width: 12
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9e473e1637a0b408c66394954a1872
+      internalID: -1359047106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_8
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1993
+        width: 228
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58f2fa574b67ea4ba31fafd7f261b1a
+      internalID: -2068573627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_18
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 2039
+        width: 94
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dbe4c5f156fb645abb5c1d7dd68077
+      internalID: 1893520398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_24
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1657
+        width: 169
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0fff64a4edf16547a359fd26d93dcea
+      internalID: -1577534176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_25
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1647
+        width: 168
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4beca4293587c45b086f8f337dc694
+      internalID: -78638244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_26
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1627
+        width: 319
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82badea46348bf4789ea6a802ff9570
+      internalID: 1889146344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_27
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1394
+        width: 163
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03030301f2315e042826c421c4b13771
+      internalID: -759653039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_28
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1369
+        width: 353
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ebb6affb031a14a9c142feb5abeff0
+      internalID: 1279979235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_29
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 976
+        width: 222
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc28ee5a00affe34084661fa2cc1e035
+      internalID: -1057177883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_30
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 977
+        width: 237
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a9f85201f4da94d96e25609a504a92
+      internalID: -1468678273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_31
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 976
+        width: 222
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5978782435ba2b3468992470938dddd3
+      internalID: 570545941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_32
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 651
+        width: 237
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1b4c8811270d04897e89da475ee0a1
+      internalID: 719190972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_33
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 352
+        width: 223
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4c1e3a27c6d0a43a58647aa92c8e80
+      internalID: 1793549961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_35
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 352
+        width: 222
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9712a41d23b234895781a85a7d70b8
+      internalID: 1486253956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_36
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 354
+        width: 237
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537a074b01f73864ab10ca6349665e64
+      internalID: -177991489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles Veredas-Calles_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1946
+        width: 89
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342fe8734b10e264186acddec24b35d6
+      internalID: 1219724690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tiles Veredas-Calles_0: 1520117850
+      Tiles Veredas-Calles_12: 298032404
+      Tiles Veredas-Calles_15: 481056998
+      Tiles Veredas-Calles_32: 719190972
+      Tiles Veredas-Calles_7: 726125738
+      Tiles Veredas-Calles_22: -1551275907
+      Tiles Veredas-Calles_10: -384927271
+      Tiles Veredas-Calles_18: 1893520398
+      Tiles Veredas-Calles_26: 1889146344
+      Tiles Veredas-Calles_31: 570545941
+      Tiles Veredas-Calles_34: -1409878285
+      Tiles Veredas-Calles_17: 1814895680
+      Tiles Veredas-Calles_5: -1088254589
+      Tiles Veredas-Calles_8: -2068573627
+      Tiles Veredas-Calles_36: -177991489
+      Tiles Veredas-Calles_23: 362425488
+      Tiles Veredas-Calles_13: 768042762
+      Tiles Veredas-Calles_29: -1057177883
+      Tiles Veredas-Calles_21: -991047202
+      Tiles Veredas-Calles_20: -810311032
+      Tiles Veredas-Calles_19: 1604170208
+      Tiles Veredas-Calles_16: -852890047
+      Tiles Veredas-Calles_2: 779067847
+      Tiles Veredas-Calles_9: -953700889
+      Tiles Veredas-Calles_3: 382611773
+      Tiles Veredas-Calles_11: 1746503172
+      Tiles Veredas-Calles_4: -1359047106
+      Tiles Veredas-Calles_24: -1577534176
+      Tiles Veredas-Calles_33: 1793549961
+      Tiles Veredas-Calles_6: 1981860286
+      Tiles Veredas-Calles_25: -78638244
+      Tiles Veredas-Calles_1: 1219724690
+      Tiles Veredas-Calles_28: 1279979235
+      Tiles Veredas-Calles_35: 1486253956
+      Tiles Veredas-Calles_30: -1468678273
+      Tiles Veredas-Calles_14: -786953806
+      Tiles Veredas-Calles_27: -759653039
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
