@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [HideInInspector]
     public List<GameObject> nodes;
     public float speed;
+    [HideInInspector]
     public bool moving;
     private GameObject targetNode;
 
