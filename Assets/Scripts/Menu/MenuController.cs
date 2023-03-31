@@ -9,12 +9,17 @@ public class MenuController : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void OpenSettings()
     {
         settings.SetActive(true);
+    }
+
+    public void LoadLevelSelector()
+    {
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGame()

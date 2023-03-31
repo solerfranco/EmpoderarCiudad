@@ -13,7 +13,9 @@ public class Subte : MonoBehaviour
         {
             teleport.GetComponent<Subte>().receiving = true;
             collision.transform.position = teleport.position;
-            FindObjectOfType<GameController>().ClearMovement();
+            //FindObjectOfType<GameController>().ClearMovement();
+            GameController.Instance.pathMaker.ClearPath();
+            GameController.Instance.player.ClearPath();
         }
         if (receiving) receiving = false;
     }
