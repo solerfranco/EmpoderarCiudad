@@ -17,15 +17,10 @@ public class PathMaker : MonoBehaviour
     private PlayerController player;
     private EnergyManager energyManager;
 
-
-    private void Awake()
+    private void Start()
     {
         energyManager = GameController.Instance.energyManager;
         player = GameController.Instance.player;
-    }
-
-    private void Start()
-    {
         SetCurrentNode();
     }
 
