@@ -14,7 +14,10 @@ public class GameController : MonoBehaviour
     public PathMaker pathMaker;
     [HideInInspector]
     public int cleaners;
-    
+
+    public Color lineColor;
+    public Color lineColorError;
+
     public Texture2D handCursor;
     public Texture2D grabCursor;
 

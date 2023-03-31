@@ -48,5 +48,7 @@ MonoBehaviour:
   energyManager: {fileID: 0}
   pathMaker: {fileID: 0}
   cleaners: 0
+  lineColor: {r: 0.9843137, g: 0.81960785, b: 0.34901962, a: 1}
+  lineColorError: {r: 0.9294118, g: 0.34117648, b: 0.3372549, a: 1}
   handCursor: {fileID: 2800000, guid: 432f16086ea121d45a21edc801f72fda, type: 3}
   grabCursor: {fileID: 2800000, guid: 37912d363f0f0dd4cb461c17924da429, type: 3}

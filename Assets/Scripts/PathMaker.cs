@@ -54,7 +54,7 @@ public class PathMaker : MonoBehaviour
                         line.positionCount++;
                         line.SetPosition(lineIndex, hit.collider.transform.position);
                         energyManager.Energy--;
-                        if(energyManager.Energy < 0)SetLineColor(Color.red);
+                        if(energyManager.Energy < 0) SetLineColor(GameController.Instance.lineColorError);
                     }
                 }
                 if (nodes.Count > 1 && hit.transform == nodes[nodes.Count - 2].transform)
@@ -63,7 +63,7 @@ public class PathMaker : MonoBehaviour
                     line.positionCount--;
                     nodes.RemoveAt(nodes.Count-1);
                     energyManager.Energy++;
-                    if (energyManager.Energy >= 0) SetLineColor(Color.green);
+                    if (energyManager.Energy >= 0) SetLineColor(GameController.Instance.lineColor);
                 }
             }
         }
@@ -79,7 +79,7 @@ public class PathMaker : MonoBehaviour
             else
             {
                 energyManager.Energy += nodes.Count - 1;
-                SetLineColor(Color.green);
+                SetLineColor(GameController.Instance.lineColor);
                 ClearPath();
             }
         }
