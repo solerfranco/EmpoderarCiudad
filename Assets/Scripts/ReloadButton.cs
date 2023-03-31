@@ -8,6 +8,7 @@ public class ReloadButton : MonoBehaviour
 
     private void Start()
     {
+        button = GetComponent<UnityEngine.UI.Button>();
         button.onClick.AddListener(GameController.Instance.ReloadScreen);
     }
 }
