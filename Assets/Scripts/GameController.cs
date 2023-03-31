@@ -18,6 +18,16 @@ public class GameController : MonoBehaviour
     public Color lineColor;
     public Color lineColorError;
 
+    public GameObject wonScreen;
+
+    private bool canShowMap;
+    public GameObject map;
+    public GameObject mapDialog;
+
+    public GameObject panel;
+
+    public bool pause;
+
     public Texture2D handCursor;
     public Texture2D grabCursor;
 
@@ -35,6 +45,44 @@ public class GameController : MonoBehaviour
         pathMaker = FindObjectOfType<PathMaker>();
         energyManager = FindObjectOfType<EnergyManager>();
         player = FindObjectOfType<PlayerController>();
+    }
+
+    public void WonLevel()
+    {
+        wonScreen.SetActive(true);
+        pause = true;
+    }
+
+    public void LoadLevel(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
+
+    public void ShowMap()
+    {
+        if (!map.activeSelf)
+        {
+            panel.SetActive(false);
+            mapDialog.SetActive(false);
+            map.SetActive(true);
+            canShowMap = true;
+        }else
+        {
+            map.SetActive(false);
+        }
+    }
+
+    public void CheckMap()
+    {
+        if (!canShowMap)
+        {
+            panel.SetActive(true);
+            mapDialog.SetActive(true);
+        }
+        else
+        {
+            ShowMap();
+        }
     }
 
     public void ReloadScreen()
