@@ -41,9 +41,10 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        //textEnergy.text = (energySlider.fillAmount * maxEnergy).ToString("F0");
-
-        //if (Input.GetKeyDown(KeyCode.R)) energySlider.fillAmount = 1;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(1);
+        }
 
     }
 }
