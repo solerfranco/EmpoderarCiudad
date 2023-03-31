@@ -8,6 +8,7 @@ on:
 jobs:
   removeOldArtifacts:
     runs-on: ubuntu-latest
+    permissions: write-all
     name: Remove artifacts
     # You may pin to the exact commit or the version.
     # uses: c-hive/gha-remove-artifacts@24dc23384a1fa6a058b79c73727ae0cb2200ca4c
@@ -29,7 +30,7 @@ jobs:
         unityVersion:
           - 2021.3.11f1
         targetPlatform:
-          - StandaloneWindows64 # Build a Windows 64-bit standalone.
+          - StandaloneWindows64 # Build a Windows 64-bit standalone
     steps:
       - uses: actions/checkout@v2
         with:
@@ -51,5 +52,5 @@ jobs:
           targetPlatform: ${{ matrix.targetPlatform }}
       - uses: actions/upload-artifact@v2
         with:
-          name: Arborem-${{ matrix.targetPlatform }}
+          name: Feminismo-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
