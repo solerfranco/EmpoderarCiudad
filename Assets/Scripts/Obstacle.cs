@@ -19,8 +19,9 @@ public class Obstacle : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(FindObjectOfType<GameController>().cleaners > 0)
+        if(GameController.Instance.cleaners > 0)
         {
+            GameController.Instance.cleaners--;
             Destroy(gameObject);
         }
     }

@@ -13,7 +13,7 @@ public class EnergyManager : MonoBehaviour
     {
         set
         {
-            energy = value;
+            energy = Mathf.Clamp(value, -100, 15);
             UpdateText();
         }
         get
