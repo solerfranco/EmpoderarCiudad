@@ -675,7 +675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7438477857895752077, guid: fcd678d878eecda40a7a700c0af5e518, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.25
+      value: 2.744
       objectReference: {fileID: 0}
     - target: {fileID: 7438477857895752077, guid: fcd678d878eecda40a7a700c0af5e518, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1169,13 +1169,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a4ce342f058d64f4d9c7cd8d9238b59d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.55
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 200
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1857,7 +1857,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000022888184, y: 0}
-  m_SizeDelta: {x: 104.061, y: 77.285}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &856554455
 MonoBehaviour:
@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d1e12fb3117f27345b62f894af63b843, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac1c03d4b0266b34887fd4c7b19bbd77, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5024,7 +5024,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000022888184, y: 0}
-  m_SizeDelta: {x: 104.061, y: 77.285}
+  m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2019003924
 MonoBehaviour:
@@ -5046,7 +5046,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d1e12fb3117f27345b62f894af63b843, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8955dc62177e88a4e84fb8bdaee6e680, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5600,7 +5600,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f522748828516454f9ffa255325c911a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8955dc62177e88a4e84fb8bdaee6e680, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5955,7 +5955,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -40, y: 30}
-  m_SizeDelta: {x: 46, y: 64.4}
+  m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 1, y: 0}
 --- !u!224 &6587304852696051476
 RectTransform:

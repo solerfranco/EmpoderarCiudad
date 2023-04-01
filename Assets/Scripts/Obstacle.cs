@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+
 
 public class Obstacle : MonoBehaviour
 {
@@ -16,13 +18,16 @@ public class Obstacle : MonoBehaviour
     //        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     //    }
     //}
+    public AudioSource clip;
 
     private void OnMouseDown()
     {
         if(GameController.Instance.cleaners > 0)
         {
+            clip.Play();
             GameController.Instance.cleaners--;
-            Destroy(gameObject);
+            Destroy(gameObject, 0.5f);
+           
         }
     }
 }

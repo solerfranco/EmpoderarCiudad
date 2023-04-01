@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,11 +11,13 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public bool moving;
     private GameObject targetNode;
+    public AudioSource clip;
 
     public void Walk(List<GameObject> nodeList)
     {
         moving = true;
         nodes = nodeList;
+        clip.Play();
     }
 
     //private void OnMouseEnter()
@@ -56,5 +59,6 @@ public class PlayerController : MonoBehaviour
         nodes.Clear();
         targetNode = null;
         moving = false;
+        clip.Pause();
     }
 }
