@@ -44,4 +44,12 @@ public class LevelSelector : MonoBehaviour
             Instance = this;
         }
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            LoadLevel(0);
+        }
+    }
 }
