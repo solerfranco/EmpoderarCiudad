@@ -10,7 +10,7 @@ public class EnergySphere : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            GameController.Instance.energyManager.Energy += energy;
+            //GameController.Instance.energyManager.Energy += energy;
             Destroy(gameObject);
         }
     }

@@ -10,6 +10,7 @@ public class Level : MonoBehaviour
     public void SelectLevel()
     {
         LevelSelector.Instance.SelectedLevel = this;
+        LevelSelector.Instance.LoadSelected();
     }
 
     public void ScaleUp()

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PathMaker : MonoBehaviour
 {
     public LayerMask nodeLayer;
+    public LayerMask energyLayer;
     public LayerMask obstacleLayer;
     public LineRenderer line;
     private int lineIndex;
@@ -16,6 +17,8 @@ public class PathMaker : MonoBehaviour
     public GameObject currentNode;
     private PlayerController player;
     private EnergyManager energyManager;
+
+    private bool isCurrentNodeEnergy;
 
     private void Start()
     {
@@ -55,15 +58,32 @@ public class PathMaker : MonoBehaviour
                         line.SetPosition(lineIndex, hit.collider.transform.position);
                         energyManager.Energy--;
                         if(energyManager.Energy < 0) SetLineColor(GameController.Instance.lineColorError);
+                        if (HasEnergy(hit))
+                        {
+                            isCurrentNodeEnergy = true;
+                            energyManager.Energy += 8;
+                        }else
+                        {
+                            isCurrentNodeEnergy = false;
+                        }
                     }
                 }
                 if (nodes.Count > 1 && hit.transform == nodes[nodes.Count - 2].transform)
                 {
                     lineIndex--;
                     line.positionCount--;
-                    nodes.RemoveAt(nodes.Count-1);
+                    nodes.RemoveAt(nodes.Count - 1);
                     energyManager.Energy++;
                     if (energyManager.Energy >= 0) SetLineColor(GameController.Instance.lineColor);
+                    if (isCurrentNodeEnergy)
+                    {
+                        energyManager.Energy -= 8;
+                        isCurrentNodeEnergy = false;
+                    }
+                    if (HasEnergy(hit))
+                    {
+                        isCurrentNodeEnergy = true;
+                    }
                 }
             }
         }
@@ -114,5 +134,12 @@ public class PathMaker : MonoBehaviour
     {
         RaycastHit2D checkWall = Physics2D.Raycast(Vector2.Lerp(nodes[nodes.Count - 1].transform.position, hit.transform.position, 0.5f), Vector2.zero, Mathf.Infinity, obstacleLayer);
         return checkWall.collider != null;
+    }
+
+    private bool HasEnergy(RaycastHit2D hit)
+    {
+        RaycastHit2D checkEnergy = Physics2D.Raycast(hit.transform.position, Vector2.zero, Mathf.Infinity, energyLayer);
+        print(checkEnergy.collider);
+        return checkEnergy.collider != null;
     }
 }
