@@ -6073,6 +6073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialog
       objectReference: {fileID: 0}
+    - target: {fileID: 4068596119719646734, guid: 9851f452cccd09a449d7e52eda8459ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7746342699991921464, guid: 9851f452cccd09a449d7e52eda8459ba, type: 3}
       propertyPath: m_Pivot.x
       value: 0
