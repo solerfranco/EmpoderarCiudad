@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public bool moving;
     private GameObject targetNode;
     public AudioSource clip;
+
+    public Sprite[] characters;
 
     public void Walk(List<GameObject> nodeList)
     {
@@ -32,6 +35,16 @@ public class PlayerController : MonoBehaviour
     //        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     //    }
     //}
+
+    private void Start()
+    {
+        GetSprite();
+    }
+
+    private void GetSprite()
+    {
+        transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = characters[PlayerPrefs.GetInt("CharacterIndex", 0)];
+    }
 
     private void Update()
     {

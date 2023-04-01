@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 6625481636827245352}
   - component: {fileID: 6798320389981415377}
   - component: {fileID: 7069159411364690695}
+  - component: {fileID: 1180968013215365855}
   m_Layer: 5
   m_Name: Head
   m_TagString: Untagged
@@ -171,7 +172,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 170.115, y: 146}
+  m_SizeDelta: {x: 245.001, y: 245}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6798320389981415377
 CanvasRenderer:
@@ -201,7 +202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5613067d8f756f846bce894af8f432d7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0009869373ddfd14092727f07f666587, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -211,6 +212,26 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &1180968013215365855
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2499228918703617829}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 03f56eb8e103e3643b15b146589c0bc2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3067977179260867883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,6 +2193,14 @@ MonoBehaviour:
   pause: 0
   handCursor: {fileID: 2800000, guid: 432f16086ea121d45a21edc801f72fda, type: 3}
   grabCursor: {fileID: 2800000, guid: 37912d363f0f0dd4cb461c17924da429, type: 3}
+  animator: {fileID: 1180968013215365855}
+  animators:
+  - {fileID: 9100000, guid: 93968f9d6e583d14f92b98f6284622de, type: 2}
+  - {fileID: 9100000, guid: f9904c4179ef0ee4e9586c124484a78e, type: 2}
+  - {fileID: 9100000, guid: 71968e916cddbd84785fa6282c2193ee, type: 2}
+  - {fileID: 9100000, guid: a67c7d460194b5b4c887398799c9a731, type: 2}
+  - {fileID: 9100000, guid: b16ef8b1ded7edc43b4a0bea5a2e1ce8, type: 2}
+  - {fileID: 9100000, guid: 03f56eb8e103e3643b15b146589c0bc2, type: 2}
 --- !u!1 &5247381824739582966
 GameObject:
   m_ObjectHideFlags: 0

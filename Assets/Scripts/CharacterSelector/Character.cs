@@ -8,6 +8,8 @@ public class Character : MonoBehaviour
     [HideInInspector]
     public Image image;
     public string description;
+    public int index;
+    public RuntimeAnimatorController animator;
 
     private void Awake()
     {
@@ -17,6 +19,7 @@ public class Character : MonoBehaviour
     public void SelectCharacter()
     {
         CharacterSelector.Instance.SelectedCharacter = this;
+        PlayerPrefs.SetInt("CharacterIndex", index);
     }
 
     public void ScaleUp()

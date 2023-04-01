@@ -31,6 +31,9 @@ public class GameController : MonoBehaviour
     public Texture2D handCursor;
     public Texture2D grabCursor;
 
+    public Animator animator;
+    public RuntimeAnimatorController[] animators;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -45,6 +48,8 @@ public class GameController : MonoBehaviour
         pathMaker = FindObjectOfType<PathMaker>();
         energyManager = FindObjectOfType<EnergyManager>();
         player = FindObjectOfType<PlayerController>();
+
+        animator.runtimeAnimatorController = animators[PlayerPrefs.GetInt("CharacterIndex",0)];
     }
 
     public void WonLevel()

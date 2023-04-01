@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CharacterSelector : MonoBehaviour
 {
     public static CharacterSelector Instance;
+    public Animator selectedAnimator;
 
     public Image image;
     public TextMeshProUGUI description;
@@ -21,6 +23,7 @@ public class CharacterSelector : MonoBehaviour
             selectedCharacter = value;
             image.sprite = value.image.sprite;
             description.text = value.description;
+            selectedAnimator.runtimeAnimatorController = value.animator;
             value.ScaleUp();
         }
         get
@@ -44,5 +47,15 @@ public class CharacterSelector : MonoBehaviour
     private void Start()
     {
         SelectedCharacter = FindObjectOfType<Character>();
+    }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void GoToPlay()
+    {
+        SceneManager.LoadScene(3);
     }
 }
