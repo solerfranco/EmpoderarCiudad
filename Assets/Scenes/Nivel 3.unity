@@ -13167,6 +13167,11 @@ Transform:
   m_Father: {fileID: 1414701789}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2105066916 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8148788898080043847, guid: fcd678d878eecda40a7a700c0af5e518, type: 3}
+  m_PrefabInstance: {fileID: 7438477857202593774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2112409237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13609,6 +13614,10 @@ PrefabInstance:
     - target: {fileID: 1047640136696619367, guid: c47c0ee8cdfc6cc4689c87705159319f, type: 3}
       propertyPath: m_Name
       value: Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047640136696619385, guid: c47c0ee8cdfc6cc4689c87705159319f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1047640136696619386, guid: c47c0ee8cdfc6cc4689c87705159319f, type: 3}
       propertyPath: m_RootOrder
@@ -14155,7 +14164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6324618123796991156, guid: e0e8052d20b2bd349993a9ba6a4d3f8d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6718335769173810733, guid: e0e8052d20b2bd349993a9ba6a4d3f8d, type: 3}
       propertyPath: m_text
@@ -14339,7 +14348,7 @@ PrefabInstance:
     - target: {fileID: 7438477857895752072, guid: fcd678d878eecda40a7a700c0af5e518, type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2105066916}
     - target: {fileID: 7438477857895752077, guid: fcd678d878eecda40a7a700c0af5e518, type: 3}
       propertyPath: m_RootOrder
       value: 5
