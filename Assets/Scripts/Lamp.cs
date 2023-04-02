@@ -10,7 +10,7 @@ public class Lamp : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             clip.Play();
-            FindObjectOfType<GameController>().cleaners++;
+            FindObjectOfType<GameController>().Cleaners++;
             Destroy(gameObject,0.4f);
         }
     }

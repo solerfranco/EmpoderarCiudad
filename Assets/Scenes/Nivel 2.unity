@@ -9008,8 +9008,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Arrastra los <color=#FD9335>focos</color> recolectados a las <color=#858585>calles
-    oscuras</color> para poder iluminarlas y pasar por ahi.
+  m_text: Haz click en las <color=#858585>calles oscuras</color> para iluminarlas
+    con los  <color=#FD9335>focos</color> recolectados y poder pasar por ahi.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 03a15ff554ea4aa4c948d58853422e39, type: 2}
   m_sharedMaterial: {fileID: 8045207667753544457, guid: 03a15ff554ea4aa4c948d58853422e39, type: 2}
@@ -9545,7 +9545,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 253, y: -41.55368}
-  m_SizeDelta: {x: 552.8655, y: 128.4966}
+  m_SizeDelta: {x: 583.417, y: 128.497}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1896911075
 MonoBehaviour:

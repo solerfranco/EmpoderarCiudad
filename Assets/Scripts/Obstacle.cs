@@ -6,6 +6,8 @@ using UnityEngine.Audio;
 
 public class Obstacle : MonoBehaviour
 {
+    public GameObject streetLight;
+
     //private void OnMouseEnter()
     //{
     //    Cursor.SetCursor(GameController.Instance.handCursor, Vector2.one * 0.5f, CursorMode.Auto);
@@ -22,12 +24,12 @@ public class Obstacle : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(GameController.Instance.cleaners > 0)
+        if(GameController.Instance.Cleaners > 0)
         {
             clip.Play();
-            GameController.Instance.cleaners--;
+            GameController.Instance.Cleaners--;
             Destroy(gameObject, 0.5f);
-           
+            Instantiate(streetLight, transform.position + Vector3.up * 0.5f, Quaternion.identity);
         }
     }
 }

@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b602a9c170357d0419b48ba306014545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  streetLight: {fileID: 4927088233617310547, guid: 478baa6c163e9154d839cef7894317e2, type: 3}
   clip: {fileID: 1549886215779958630}
 --- !u!82 &1549886215779958630
 AudioSource:

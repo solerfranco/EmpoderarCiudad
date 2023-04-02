@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
@@ -12,8 +13,21 @@ public class GameController : MonoBehaviour
     public EnergyManager energyManager;
     [HideInInspector]
     public PathMaker pathMaker;
-    [HideInInspector]
-    public int cleaners;
+    private int cleaners;
+    public int Cleaners
+    {
+        set
+        {
+            cleaners = value;
+            lampCounter.text = value.ToString();
+        }
+        get
+        {
+            return cleaners;
+        }
+    }
+
+    public TextMeshProUGUI lampCounter;
 
     public Color lineColor;
     public Color lineColorError;
