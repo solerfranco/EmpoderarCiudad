@@ -19,7 +19,7 @@ public class Tutorial : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && dialogs.Length > 0)
+        if (Input.GetMouseButtonDown(0) && !GameController.Instance.pauseMenu.activeSelf && dialogs.Length > 0)
         {
             dialogs[0].SetActive(false);
             dialogs = dialogs.Skip(1).ToArray();

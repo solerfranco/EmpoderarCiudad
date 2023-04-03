@@ -33,6 +33,7 @@ public class GameController : MonoBehaviour
     public Color lineColorError;
 
     public GameObject wonScreen;
+    public GameObject loseScreen;
 
     private bool canShowMap;
     public GameObject map;
@@ -47,6 +48,8 @@ public class GameController : MonoBehaviour
 
     public Animator animator;
     public RuntimeAnimatorController[] animators;
+
+    public GameObject pauseMenu;
 
     private void Awake()
     {
@@ -69,6 +72,12 @@ public class GameController : MonoBehaviour
     public void WonLevel()
     {
         wonScreen.SetActive(true);
+        pause = true;
+    }
+
+    public void LoseLevel()
+    {
+        loseScreen.SetActive(true);
         pause = true;
     }
 
@@ -109,11 +118,16 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(1);
+            pauseMenu.SetActive(!pauseMenu.activeSelf);
         }
 
     }

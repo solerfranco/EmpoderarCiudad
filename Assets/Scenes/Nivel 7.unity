@@ -20733,7 +20733,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: -1612153254, guid: bab727949f06aca45a33cfb08ea81c41, type: 3}
   m_Color: {r: 0.33679935, g: 0.49056602, b: 0.30313277, a: 1}
   m_FlipX: 0
@@ -45182,6 +45182,10 @@ PrefabInstance:
       propertyPath: map
       value: 
       objectReference: {fileID: 277146090}
+    - target: {fileID: 5021673448158044454, guid: e0e8052d20b2bd349993a9ba6a4d3f8d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5247381823687760087, guid: e0e8052d20b2bd349993a9ba6a4d3f8d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

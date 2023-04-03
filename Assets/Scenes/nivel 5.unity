@@ -28399,6 +28399,10 @@ PrefabInstance:
       propertyPath: map
       value: 
       objectReference: {fileID: 650371301}
+    - target: {fileID: 5021673448158044454, guid: e0e8052d20b2bd349993a9ba6a4d3f8d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5247381823687760087, guid: e0e8052d20b2bd349993a9ba6a4d3f8d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
