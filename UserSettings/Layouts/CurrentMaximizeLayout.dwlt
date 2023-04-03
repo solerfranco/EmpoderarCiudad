@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 73137
+  controlID: 85633
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 73138
+  controlID: 85634
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 73139
+  controlID: 85635
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0ad4f5ff6cd5f5ff8c60f6ffb4f9f6ffc4f9f6ff3afbf6ffeafff6ffd801f7ffe801f7ff5e03f7ffb608f7ff880ff7ff5215f7ffaa18f7ffa41af7ffb41af7ffc41af7ff3a1cf7ff4620f7ff1224f7ff2224f7ff8625f7ff9225f7ffee26f7ff5a29f7ff6a29f7ffda2af7ff582df7ff562ff7ff662ff7ffd630f7ff7832f7ffbc3bf7ffcc3bf7ffdc3bf7ff4c3df7ffae3ef7ff7aaef7ff88d6f7ff70def7ff32e7f7ff82eef7ffb6f4f7ff5efaf7ff50fff7ff3604f8ff8222f8ffa42cf8ff3e2ff8ffd236f8ff2063f8ffec63f8ffa268f8ffae6bf8ffa672f8ff447af8ffee80f8ff7086f8ffc0b2f8ff8cb3f8ffe0b8f8ffb0bff8ff1ec7f8ff80cdf8ffdad2f8ff8ad7f8ff86dbf8ff80dff8ffc8e9f8ff38f1f8ff92f7f8ffc6fef8ffc898020028a6020022b7020022ef02004ef20200d6f3020078f40200de3a0300be3b0300de400300844403006e69030080690300d4690300f27e0300c2b50400a2b60400c2bb0400c61f0500
+      m_ExpandedIDs: 281cf2ffb620f2ff762af2ff7c2ef2ff242ff2ff1031f2ffb839f2ff0843f2ff464bf2ff7e52f2ff0c59f2ffe45ef2ffce64f2ff9865f2ff1667f2ff5e69f2ffd26cf2ff7a6df2ff666ff2ff0e78f2ff5e81f2ff9c89f2ffd490f2ff6297f2ff3a9df2ff24a3f2ffeea3f2ff6ca5f2ffb4a7f2ffb4c4f2ff18c8f2ff18c9f2ff78caf2ff4ed0f2ff5ed0f2ff6ed0f2ff4cd1f2fffcd5f2ffd8def2ff6ee4f2ff16e5f2ffa4eff2fff4f8f2ff3201f3ff6a08f3fff80ef3ffd014f3ffa61af3ff701bf3ffee1cf3ff201ff3ff0ad4f5ff6cd5f5ff8c60f6ffb4f9f6ffc4f9f6ff3afbf6ffeafff6ffd801f7ffe801f7ff5e03f7ffb608f7ff880ff7ff5215f7ffaa18f7ffa41af7ffb41af7ffc41af7ff3a1cf7ff4620f7ff1224f7ff2224f7ff8625f7ff9225f7ffee26f7ff5a29f7ff6a29f7ffda2af7ff582df7ff562ff7ff662ff7ffd630f7ff7832f7ffbc3bf7ffcc3bf7ffdc3bf7ff4c3df7ffae3ef7ff7aaef7ff88d6f7ff70def7ff32e7f7ff82eef7ffb6f4f7ff5efaf7ff50fff7ff3604f8ff8222f8ffa42cf8ff3e2ff8ffd236f8ff2063f8ffec63f8ffa268f8ffae6bf8ffa672f8ff447af8ffee80f8ff7086f8ffc0b2f8ff8cb3f8ffe0b8f8ffb0bff8ff1ec7f8ff80cdf8ffdad2f8ff8ad7f8ff86dbf8ff80dff8ffc8e9f8ff38f1f8ff92f7f8ffc6fef8ffc898020028a6020022b7020022ef02004ef20200d6f3020078f40200de3a0300be3b0300de400300844403006e69030080690300d4690300f27e0300c2b50400a2b60400c2bb0400c61f0500a0cf0600
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -524,9 +524,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 435.81958, y: 194.3974, z: 0.39798802}
+    m_Target: {x: 407.30597, y: 171.40372, z: 0.28455997}
     speed: 2
-    m_Value: {x: 435.81958, y: 194.3974, z: 0.39798802}
+    m_Value: {x: 407.30597, y: 171.40372, z: 0.28455997}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -577,9 +577,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 279.25467
+    m_Target: 201.55334
     speed: 2
-    m_Value: 279.25467
+    m_Value: 201.55334
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -656,7 +656,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 73087
+  controlID: 85559
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -676,8 +676,8 @@ MonoBehaviour:
     y: 0
     width: 531
     height: 504
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -725,21 +725,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/TextMesh Pro/Fonts
+    - Assets/Audio
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 96
   m_LastFolders:
-  - Assets/TextMesh Pro/Fonts
-  m_LastFoldersGridSize: -1
+  - Assets/Audio
+  m_LastFoldersGridSize: 96
   m_LastProjectPath: D:\Unity Projects\EmpoderarCiudad
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 193}
-    m_SelectedIDs: 30810000
-    m_LastClickedID: 33072
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: fa800000
+    m_LastClickedID: 33018
     m_ExpandedIDs: 00000000ca800000cc800000ce800000d0800000d2800000d480000008810000248100002c810000c8930000649c000000a5000028a60000ccad00008eb00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -793,10 +793,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 30810000
-    m_LastClickedInstanceID: 33072
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000ec78000090b00000
+    m_SelectedInstanceIDs: a0cf0600
+    m_LastClickedInstanceID: 446368
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000ec78000090b000009a790000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -812,7 +812,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -821,7 +821,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 165
 --- !u!114 &13
@@ -845,9 +845,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 811
-    width: 322
-    height: 198
+    y: 526
+    width: 530
+    height: 483
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -938,7 +938,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 33072
+  m_LastInspectedObjectInstanceID: 446368
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0

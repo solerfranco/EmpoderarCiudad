@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
 
     public void ClearPath()
     {
-        if (GameController.Instance.energyManager.Energy <= 0) GameController.Instance.LoseLevel();
+        if (GameController.Instance.energyManager.Energy <= 0 && !GameController.Instance.wonScreen.activeSelf) GameController.Instance.LoseLevel();
         nodes.Clear();
         targetNode = null;
         moving = false;

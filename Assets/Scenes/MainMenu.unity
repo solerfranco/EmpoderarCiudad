@@ -865,6 +865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bbfdeac4dbf5ff41815a883eae76c53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 970362d293ae52e41b718111f141ef8a, type: 2}
   settings: {fileID: 284970931}
 --- !u!1001 &610308488
 PrefabInstance:
