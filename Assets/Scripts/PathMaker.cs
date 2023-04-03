@@ -58,7 +58,7 @@ public class PathMaker : MonoBehaviour
                         line.SetPosition(lineIndex, hit.collider.transform.position);
                         energyManager.Energy--;
                         if(energyManager.Energy < 0) SetLineColor(GameController.Instance.lineColorError);
-                        if (HasEnergy(hit))
+                        if (HasEnergy(hit) && energyManager.Energy >= 0)
                         {
                             isCurrentNodeEnergy = true;
                             energyManager.Energy += 8;
@@ -80,7 +80,7 @@ public class PathMaker : MonoBehaviour
                         energyManager.Energy -= 8;
                         isCurrentNodeEnergy = false;
                     }
-                    if (HasEnergy(hit))
+                    if (HasEnergy(hit) && energyManager.Energy >= 0)
                     {
                         isCurrentNodeEnergy = true;
                     }
